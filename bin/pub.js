@@ -1,6 +1,14 @@
 #!/usr/bin/env node
 'use strict';
 
+// Re-exec with --no-warnings to suppress the harmless `--localstorage-file`
+// warning emitted by docx's bundled readable-stream on Node ≥ 22.
+if (!process.execArgv.includes('--no-warnings')) {
+  const { spawnSync } = require('child_process');
+  const result = spawnSync(process.execPath, ['--no-warnings', __filename, ...process.argv.slice(2)], { stdio: 'inherit' });
+  process.exit(result.status ?? 0);
+}
+
 // ─────────────────────────────────────────────────────────────────
 //  pub  —  Academic Publication Summariser CLI
 //
