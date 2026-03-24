@@ -1,6 +1,6 @@
 {
   "name": "@decoding/pubsum",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Search and summarise academic publications from the terminal. Outputs to terminal, .docx, Markdown, or JSON. Powered by OpenAlex & CrossRef — no API key required.",
   "type": "commonjs",
   "bin": {
