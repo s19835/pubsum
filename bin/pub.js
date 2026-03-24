@@ -168,10 +168,8 @@ function showTemplate() {
 }
 
 // ── Search command ────────────────────────────────────────────────
-async function cmdSearch(argv) {
-  const { rest, flags } = parseArgs(['', '', 'search', ...argv]);
-
-  let query = rest.join(' ');
+async function cmdSearch(positional, flags = {}) {
+  let query = positional.join(' ');
 
   // Interactive if no query given
   if (!query) {
@@ -350,7 +348,7 @@ async function main() {
 
   switch (command) {
     case 'search':
-      await cmdSearch(rest);
+      await cmdSearch(rest, flags);
       break;
 
     case 'review':
@@ -370,7 +368,7 @@ async function main() {
 
     default:
       // Treat unknown first arg as a search query
-      await cmdSearch([command, ...rest].filter(Boolean));
+      await cmdSearch([command, ...rest].filter(Boolean), flags);
   }
 }
 
