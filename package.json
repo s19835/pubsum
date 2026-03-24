@@ -1,0 +1,42 @@
+{
+  "name": "pubsum",
+  "version": "1.0.0",
+  "description": "Search and summarise academic publications from the terminal. Outputs to terminal, .docx, Markdown, or JSON. Powered by OpenAlex & CrossRef — no API key required.",
+  "type": "commonjs",
+  "bin": {
+    "pub": "./bin/pub.js"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "academic",
+    "publications",
+    "literature-review",
+    "research",
+    "openalex",
+    "crossref",
+    "cli",
+    "summariser",
+    "docx",
+    "science"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/s19835/pubsum"
+  },
+  "homepage": "https://github.com/s19835/pubsum#readme",
+  "bugs": {
+    "url": "https://github.com/s19835/pubsum/issues"
+  },
+  "dependencies": {
+    "docx": "^9.6.1"
+  }
+}

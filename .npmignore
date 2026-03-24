@@ -1,0 +1,10 @@
+# Dev / repo artefacts
+.git/
+.gitignore
+*.tmp
+*.log
+
+# CI / tooling
+.github/
+homebrew/
+scripts/
