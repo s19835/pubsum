@@ -1,12 +1,8 @@
 class Pubsum < Formula
   desc "Search and summarise academic publications from the terminal"
   homepage "https://github.com/s19835/pubsum"
-  url "https://registry.npmjs.org/pubsum/-/pubsum-1.0.0.tgz"
-  # Run `shasum -a 256 pubsum-1.0.0.tgz` on the downloaded tarball and paste here:
-  # This sha256 is from the LOCAL build — re-generate after `npm publish`:
-  #   curl -o pubsum-1.0.0.tgz "$(npm view pubsum dist.tarball)"
-  #   shasum -a 256 pubsum-1.0.0.tgz
-  sha256 "2f0dbec1239287a15064c02025f9246ef72dca5cbff15ba2324978b96f6dc5f5"
+  url "https://registry.npmjs.org/@decoding/pubsum/-/pubsum-1.0.0.tgz"
+  sha256 "080115b27e5513eb59242423d9411457c2193bfdbf5a970949d03821e570f630"
   license "MIT"
 
   depends_on "node"

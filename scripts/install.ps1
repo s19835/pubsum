@@ -45,7 +45,7 @@ if (-not $npmCmd) {
 
 # ── Install pubsum ────────────────────────────────────────────────
 Write-Info "Installing pubsum..."
-npm install -g pubsum
+npm install -g @decoding/pubsum
 
 # ── Verify ───────────────────────────────────────────────────────
 $pubCmd = Get-Command pub -ErrorAction SilentlyContinue

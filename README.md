@@ -33,7 +33,7 @@ brew install pubsum
 ### macOS / Linux / Windows — npm (Node.js ≥ 16)
 
 ```bash
-npm install -g pubsum
+npm install -g @decoding/pubsum
 ```
 
 ### Linux — one-liner install script
@@ -47,14 +47,14 @@ Or manually:
 ```bash
 # Requires Node.js ≥ 16
 node --version          # check
-npm install -g pubsum
+npm install -g @decoding/pubsum
 pub --help
 ```
 
 ### Windows — npm (PowerShell or Command Prompt)
 
 ```powershell
-npm install -g pubsum
+npm install -g @decoding/pubsum
 pub --help
 ```
 
@@ -272,10 +272,10 @@ Detection is automatic from title, abstract, and journal venue text.
 ## Platform Notes
 
 ### macOS & Linux
-Works out of the box after `npm install -g pubsum`. The `pub` command is added to your PATH automatically.
+Works out of the box after `npm install -g @decoding/pubsum`. The `pub` command is added to your PATH automatically.
 
 ### Windows
-After `npm install -g pubsum`, use `pub` in **Command Prompt**, **PowerShell**, or **Windows Terminal**. npm creates a `.cmd` wrapper automatically — no extra setup needed.
+After `npm install -g @decoding/pubsum`, use `pub` in **Command Prompt**, **PowerShell**, or **Windows Terminal**. npm creates a `.cmd` wrapper automatically — no extra setup needed.
 
 ```powershell
 pub search "groundwater" --count 5

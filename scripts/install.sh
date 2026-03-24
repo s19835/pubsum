@@ -62,7 +62,7 @@ fi
 
 # ── Install pubsum ────────────────────────────────────────────────
 info "Installing pubsum..."
-npm install -g pubsum
+npm install -g @decoding/pubsum
 
 # ── Verify ───────────────────────────────────────────────────────
 if command -v pub &>/dev/null; then
